@@ -56,24 +56,6 @@
                     </a>
                 </li>
 
-                {{-- Service --}}
-                <li class="nav-item">
-                    <a href="{{ route('service.index') }}"
-                        class="nav-link menu-link {{ request()->routeIs('service.*') ? 'active' : '' }}">
-                        <i class="ri-tools-line"></i>
-                        <span data-key="t-faq">Service</span>
-                    </a>
-                </li>
-
-                {{-- Frequently Asked Questions --}}
-                <li class="nav-item">
-                    <a href="{{ route('faq.index') }}"
-                        class="nav-link menu-link {{ request()->routeIs('faq.*') ? 'active' : '' }}">
-                        <i class="ri-question-line"></i>
-                        <span data-key="t-faq">FAQ</span>
-                    </a>
-                </li>
-
                 <hr>
                 {{-- Settings --}}
                 <li class="nav-item">
@@ -109,30 +91,6 @@
                                     class="nav-link {{ request()->routeIs('mail.setting') ? 'active' : '' }}"
                                     data-key="t-system-settings">
                                     SMTP Server
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="{{ route('integration.setting') }}"
-                                    class="nav-link {{ request()->routeIs('integration.setting') ? 'active' : '' }}"
-                                    data-key="t-integration-settings">
-                                    Integration Settings
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="{{ route('social.index') }}"
-                                    class="nav-link {{ request()->routeIs('social.index') ? 'active' : '' }}"
-                                    data-key="t-social-media-settings">
-                                    Social Media Settings
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="{{ route('settings.dynamic_page.index') }}"
-                                    class="nav-link {{ request()->routeIs('settings.dynamic_page.*') ? 'active' : '' }}"
-                                    data-key="t-dynamic-page-settings">
-                                    Dynamic Page Settings
                                 </a>
                             </li>
 

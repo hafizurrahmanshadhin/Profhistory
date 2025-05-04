@@ -31,20 +31,7 @@ return Application::configure(basePath: dirname(__DIR__))
             Route::middleware(['api'])
                 ->prefix('api')
                 ->group(base_path('routes/Api/auth.php'));
-
-            Route::middleware(['api', 'auth.jwt'])
-                ->prefix('api')
-                ->group(base_path('routes/Api/chat.php'));
         },
-    )
-    ->withBroadcasting(
-        __DIR__ . '/../routes/channels.php',
-        [
-            'prefix'     => 'api',
-            'middleware' => [
-                'api', 'auth.jwt',
-            ],
-        ],
     )
     ->withMiddleware(function (Middleware $middleware) {
         $middleware->alias([

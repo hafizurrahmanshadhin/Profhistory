@@ -6,7 +6,7 @@ php artisan serve
 
 ---
 
-## [Postman Collection](.)
+## [Postman Collection](https://documenter.getpostman.com/view/31030852/2sB2j68pWc)
 
 ---
 
