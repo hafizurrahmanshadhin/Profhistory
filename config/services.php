@@ -21,4 +21,15 @@ return [
             'channel'              => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
+
+    'openai'   => [
+        'key' => env('OPENAI_API_KEY'),
+    ],
+
+    'pinecone' => [
+        'key'         => env('PINECONE_API_KEY'),
+        'environment' => env('PINECONE_ENVIRONMENT'),
+        'index_name'  => env('PINECONE_INDEX_NAME'),
+        'base_url'    => env('PINECONE_BASE_URL'),
+    ],
 ];

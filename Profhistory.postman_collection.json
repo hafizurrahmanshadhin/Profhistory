@@ -532,6 +532,87 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Profhistory",
+			"item": [
+				{
+					"name": "upload-documents",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "documents[]",
+									"type": "file",
+									"src": "/E:/Career/Resume/General/Hafizur_Rahman_Shadhin.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/upload-documents",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"upload-documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ask",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"question\": \"What are my main responsibilities as a Laravel Developer at Softvence Agency?\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "{{base_url}}/ask",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"ask"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	],
 	"event": [
